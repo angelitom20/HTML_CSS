@@ -1,0 +1,61 @@
+<!DOCTYPE html><!--todas las paginas deben empezar con esto-->
+<html lang="en"><!--lang especifica el lenguaje d la pagina en esta caso ingles-->
+    <head>
+        <meta charset="UTF-8"><!--meta nos dice como se codificara la pagina-->
+        <title>CatPhotoApp</title><!--title el titulo que mostrara el navegador en la pestaña-->
+    </head>
+  <body><!--es lo que se mostrara en la pagina-->
+    <main>
+      <h1>CatPhotoApp</h1>
+      <section><!--section separa el codigo en secciones-->
+        <h2>Cat Photos</h2>
+        <!-- TODO: Add link to cat photos -->
+        <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p><!--p es para escribir texto, a es para linkear texto   -->
+        <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+      <section>
+        <h2>Cat Lists</h2>
+        <h3>Things cats love:</h3>
+        <ul>
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul><!--ul es una lista pero no ordenada-->
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+          <figcaption>Cats <em>love</em> lasagna.</figcaption>  
+        </figure>
+        <h3>Top 3 things cats hate:</h3>
+        <ol><!--ol numero los elementos de una lista-->
+          <li>flea treatment</li><!--li es para listar-->
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
+        </figure>
+      </section>
+      <section>
+        <h2>Cat Form</h2><!--label nos permite seleccionar la opcion clikeando sobre el texto-->
+        <form action="https://freecatphotoapp.com/submit-cat-photo"><!--form es para crear un formulario-->
+            <fieldset><!--fieldest agrupa lo de adentro y luego da un salto de linea-->
+                <legend>Is your cat an indoor or outdoor cat?</legend><!--legend agrega un titulo al formulario-->
+             <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label><!--name es para que no se puedan seleccionar ambos-->
+          <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label><!--value es para enviar su valor al formulario, id es para identificarlo-->
+        </fieldset>
+        <fieldset> 
+            <legend>What's your cat's personality?</legend>
+            <input type="checkbox" id="loving" name="personality" value="loving" checked> <label for="loving">Loving</label> <!--el atributo for asocia el texto con el input sin anidar ambos dentro de label donde id==for-->
+            <input type="checkbox" id="lazy" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+            <input type="checkbox" id="energetic" name="personality" value="energetic"> <label for="energetic">Energetic</label>
+        </fieldset>
+          <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+          <button type="submit">Submit</button><!---->
+        </form>
+      </section>
+    </main>
+    <footer>
+        <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>a></p>
+    </footer>
+  </body>
+</html>

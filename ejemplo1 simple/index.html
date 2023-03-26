@@ -1,0 +1,24 @@
+<!-- Simplified algorithm skipped heading levels issue -->
+<body>
+    <main>
+      <h1>Primary heading for the page</h1> <!-- interpreted as <h1> -->
+      <p>This is some content</p>
+    </main>
+  
+    <!-- sectioning elements increase heading levels -->
+    <aside aria-label="Side bar"> <!-- aria-label does not contribute -->
+      <section>
+        <h1>Share</h1> <!-- interpreted as <h3> -->
+        <ul>
+          <!-- list of social media links -->
+        </ul>
+      </section>
+  
+      <section>
+        <h1>Recommended articles:</h1>  <!-- interpreted as <h3> -->
+        <ul>
+          <!-- list of recommended articles -->
+        </ul>
+      </section>
+    </aside>
+  </body>

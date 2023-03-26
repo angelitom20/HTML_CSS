@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>https://survey-form.freecodecamp.rocks/</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Gracias por tomarte el tiempo para ayudarnos a mejorar nuestra plataforma</p>
+        <form id="survey-form">
+            <label id="name-label">Nombre: <input id="name" type="text" required placeholder="Escribe tu nombre"></label>
+            <label id="email-label">Correo: <input id="email" type="email" required placeholder="Escribe tu correo"></label>
+            <label id="number-label">Edad: <input type="number" id="number" min="18" max="100" placeholder="Escribe tu edad"></label>
+            <label for="referrer">Cual opcion describe mejor tu rol
+                <select id="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="1">Trabajador</option>
+                    <option value="2">Estudiante</option>
+                </select>
+            </label>
+            <label><input type="radio" name="recomendar" class="opcion" value="si"> SI</label>
+            <label><input type="radio" name="recomendar" class="opcion" value="no"> NO</label>
+            
+            <label>Que te gustaria mejorar: <br><br> <input type="checkbox" value="primero">Front-End</label>
+            <label><input type="checkbox" value="segundo">Back-End</label>
+            <label><input type="checkbox" value="tercero">Proyectos</label>
+            <label><input type="checkbox" value="cuarto">Videos<br></label>
+            
+            <label for="comment">Comentarios adicionales: <br><br><textarea id="comment" rows="3" cols="30" placeholder="Me gustaria mejorar ..."></textarea>
+            </label>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </body>
+</html>
+

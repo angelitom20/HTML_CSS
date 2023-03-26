@@ -1,0 +1,30 @@
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.opcion {
+    margin-left: 0.5em;
+}
+
+form {
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+h1, p{
+    margin: 1em auto;
+    text-align: center;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #3761e9;
+    color: #000000;/*le da color al texto*/
+    font-family: Tahoma;
+    font-size: 16px;
+}

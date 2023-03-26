@@ -1,0 +1,101 @@
+ 
+
+  body {
+    padding-top: 200px;
+    background-color: #eee;
+    font-family: fantasy, sans-serif;
+  }
+/*alineacion del header con el logo y la barra de navegacion y la lista*/
+header{
+    position: fixed;
+    top: 0px;
+    display: flex;
+justify-content: space-between;
+align-items: center;
+text-align: center;
+background-color: #E7EBDA;
+padding-top: 0;
+margin-top: 0;
+width: 100%;
+}
+
+img {
+    max-width: 50px;
+}
+
+.imagen{
+    text-transform: uppercase;
+    text-align: left;
+    max-width: 30%;
+    display:inline-block;
+}
+header nav{
+    text-align: right;
+    display:inline-block;
+    width:60%;
+}
+
+header ul{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0.5em auto;
+    text-align: center;
+}
+
+header ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    border: solid;
+    border-color: #11a6b9;
+    border-radius: 50px;
+    background-color: #7D8471;
+    color: rgb(212, 212, 212);
+    padding: 0.3em;
+}
+
+header ul li a:hover{
+    background-color: #B8B799;
+    border-color: #B8B799;
+}
+
+/*fin de la alineacion del header con el logo y la barra de navegacion y la lista*/
+
+/*INICIO centramos section donde esta el formulario*/
+  #hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 20px;
+    margin-top: 10px;
+  }
+
+/*FIN centramos section donde esta el formulario*/
+
+@media (max-width: 500px) {
+    #header {
+      flex-direction: column;
+    }
+    
+    #header-img {
+      display: none;
+    }
+    #imagen {
+      text-align: center
+    }
+   
+    #imagen {
+      padding: 10px;
+    }
+    #nav-bar {
+      width: 90%;
+      height: 40px;
+      justify-content: space-around;
+    }
+      
+   }

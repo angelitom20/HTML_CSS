@@ -1,0 +1,103 @@
+h1, h2, p {text-align:center;}
+
+img{
+  display: block;
+  margin-left:auto;/*el auto lo centra si ponemos 50% en ambos left-right no se centra*/
+  margin-right:auto;
+  margin-top: -20px;
+}
+
+body {
+    background-image:url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    font-family: sans-serif;
+    padding: 20px;
+    
+}
+
+.menu {
+    padding-left: 20px;/*los padding deja un espacio entre las orillas */
+    padding-right:20px;
+    padding-top:20px;
+    padding-bottom:20px;
+    /*padding:20px; hace todo que hace los 4 padding de arriba/*/
+    width:80%;/*width da el tamaño en pixels(100px) o en porcentaje(50%)*/
+    background-color: burlywood;
+    margin-left:auto;
+    margin-right:auto;/*para centrar los margin*/
+    max-width: 500px; /*evita que se expanda mas de lo necesario*/
+}
+
+.flavor, .dessert{
+    text-align:left;
+    width:75%;
+  }
+
+.price{
+    text-align:right;
+    width:25%;
+  } 
+
+.item p{
+  display:inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+h1, h2{
+  font-family:Impact, serif;/*fuente principal, fuente de respaldo*/
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.established {
+  font-style:italic;
+}
+
+h1 {
+  font-size:30px;
+}
+
+h2 {
+  font-size:40px;
+}
+
+hr {
+  height:2px;/*da altur al elemento hr, cada borde de hr mide 1px*/
+  background-color: brown;  
+  border-color: brown;
+}
+
+.bottom-line{
+  margin-top:25px;
+}
+
+/*FOOTER*/
+footer{
+  font-size: 14px;
+}
+
+a {
+  color: black;
+}
+
+a:visited{/*si el enlace ya fue visitado su color sera gris*/
+  color: black;
+}
+
+a:hover{/*cuando se pone el raton sobre el cambia de color*/
+  color: brown;
+}
+
+a:active{/*cuando se presiona el enlace cambia de color*/
+  color:white;
+}
+
+.address{
+  margin-bottom:5px;
+}
+
+a{
+  color: #dfdfe2
+}
+
